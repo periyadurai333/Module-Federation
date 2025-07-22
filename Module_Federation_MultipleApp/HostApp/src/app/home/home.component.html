@@ -1,5 +1,11 @@
-<ul>
-    <li><a routerLink="/remote_app">Flights</a></li>
-</ul>
-
-<router-outlet></router-outlet>
+<div class="app-container">
+    <aside class="sidebar">
+        <ul>
+            <li><a routerLink="/home/remote_app">Remote App</a></li>
+            <!-- Add other host-specific navigation items here -->
+        </ul>
+    </aside>
+    <main class="content-area">
+        <router-outlet></router-outlet> <!-- Remote app content will load here -->
+    </main>
+</div>
